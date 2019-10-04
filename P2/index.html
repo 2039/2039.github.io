@@ -17,6 +17,10 @@
             font-size: 24px;
         }
 
+        img{
+          width: 60ch;
+        }
+
         h1 {
             padding: 0;
             margin: 0;
@@ -136,14 +140,16 @@
             <p>The website will also contain a vast library of old Lorem Ipsum documents, as we aim to restore and preserve them for posterity. Laura has also asked us to include the ability to make the pages printable.</p>
             <p>We will make an effort to enable a responsive design, so that researchers can access their data on their desktop, as well as on the fly on their phones. We will prioritize desktops, being the fallback design.</p>
         </div>
-        <div class="block incomplete">
+        <div class="block">
             <h2>4: Navigation structure</h2>
             <p>The site will include a header with a navigation menu containing links to every page, so the website become a complete graph (maximal clique). Every page will then be a single click away, and no page will be hidden behind another page.</p>
             <p>Because the website is so small, this should not be an issue. However, if the website is to be expanded upon, it might be desirable to isolate certain parts of the website.</p>
             <p>The header should collapse on mobile devices, which will introduce a second click, but the structure will be the same.</p>
         </div>
-        <div class="block incomplete">
+        <div class="block">
             <h2>5: Page layout and appearance</h2>
+            <p> The generic webpage which contains the elements that are the same for all sub pages, is intended to look like this: </p>
+            <img src="img/lorem ipsum plain.png" type="images/png"/>
             <p> The following fonts, colors, and sizes have been chosen for the different elements on our page:
               <ul>
                 <li> Background color: 0xFF_8F_00 </li>
@@ -165,38 +171,62 @@
                 <li> Header-width: 75% av view-width  </li>
                 <li> Header-height: Ca. 10vh </li>
                 <li> text box width: Ca. 60vw </li>
+                <li> The text itself is centered. </li>
+                  <li> Text box and header and different javascript apps are centered at middle of the page. </li>
 
               </ul>
 
             </p>
         </div>
-        <div class="block incomplete">
+        <div class="block">
             <h2>6: Content</h2>
             <h3>Front page</h3>
-            <p>This should be the landing page and should contain a sitemap leading users deeper into the Lorem Ipsum universe.</p>
+            <p>This should be the landing page and should contain a sitemap leading users deeper into the Lorem Ipsum universe.
+            It also contains some sort of text to fill the page which can be interestion to the reader.</p>
+
+          <img src="img/lorem ipsum home v3.png" type="images.png"/>
             <h3>Quiz page</h3>
-            <p>This should contain questions which lets the user select and submit and receive a score based on values.</p>
+            <p>This should contain questions which lets the user select and submit answers. The user
+               types the answers into the white text box underneath the questions. Pressing enter submits the answer.
+               If pressing enter proves to be unintuitive for the user, we can implement a submit button at the bottom of
+               the quiz.
+              The quiz app should have some more narrow margin than the normal text with in the other pages.</p>
+            <img src="img/lorem ipsum quiz.png" type="images.png"/>
             <h3>Translator page</h3>
-            <p>This should translate user input into Pig Latin.</p>
-            <h3>Library</h3>
-            <p>This should contain a page listing different (generated) papers, and lets the user select and read an article. This should also include a download-button so that the user can download and/or print an article.</p>
+            <p>This page translates input text (some normal language like english), and translates it into pig latin.
+            The top box is where the user types the input text. After pressing the translate button, the translated text
+           appears in the bottom box.</p>
+            <img src="img/lorem ipsum translator.png" type="images.png"/>
+            <h3>Article generator</h3>
+            <p>This should contain a page creating a randomized lorem ipsum article.
+              The user selects the amount of paragraphs he/she desires, and the article appears in the white text box below.</p>
+              <img src="img/lorem ipsum article generator.png" type="images.png"/>
+            <h3>Info</h3>
+            <p>This page contains more details of what lorem ipsum is.</p>
+            <img src="img/Lorem ipsum Info.png" type="images.png"/>
             <h3>About</h3>
-            <p>This should contain information about the project.</p>
+            <p>This should contain information about the project. i.e. Authors, deadlines, etc.</p>
+            <img src="img/lorem ipsum about.png" type="images.png"/>
         </div>
         <div class="block">
             <h2>7: Minimum requirements (Javascript programs)</h2>
             <h3>Pig Latin translator</h3>
-            <p>Hauk-Morten and Andreas will provide a <a href="https://en.wikipedia.org/wiki/Pig_Latin">Pig Latin</a> translator, that translate to and from this ancient language. This will aid people to decode ancient texts, or to write secret messages to the initiated.</p>
-            <p>Words starting with a consonant will have the first letter shifted to the end, and ay will be appended. E.g. <code class="inline highlight">bee -&gt; eebay</code>. If the first letter is a vowel, no letter will be shifted and only ay will be appended. E.g. <code class="inline highlight">ease -&gt; easeay</code>.</p>
-            <p>To avoid ambiguous translations, such as <code class="inline highlight">eat -&gt; eatay</code> and <code class="inline highlight">tea -&gt; eatay</code>, a zero-width space will be inserted before ay; <code class="inline highlight">eat -&gt; ea&amp;#8203;ay</code>. This will ensure a one-to-one correspondence between plaintext and translations.</p>
+            <p> Hauk-morten will be implementing a javascript application which translates
+              normal language to pig latin language. Words starting with a consonant will have the first letter shifted to the end,
+              and ay will be appended. E.g. <code class="inline highlight">bee -&gt; eebay</code>. If the first letter is a vowel,
+              no letter will be shifted and only ay will be appended. E.g. <code class="inline highlight">ease -&gt; easeay</code>.
+              o avoid ambiguous translations, such as <code class="inline highlight">eat -&gt; eatay</code> and <code class="inline highlight">tea -&gt; eatay</code>
+              , a zero-width space will be inserted before ay; <code class="inline highlight">eat -&gt; ea&amp;#8203;ay</code>.
+              This will ensure a one-to-one correspondence between plaintext and translations.
+            </p>
             <h3>Quiz program</h3>
-            <p>This will be a questionnaire containing a set of questions about Lorem Ipsum. The aim is to test person of their knowledge of the language, and to provide a rating of their proficiency.</p>
-            <p>The quiz will consist of a form, which is read by the program and assigns weights to each answer. The result should be displayed on the page as the user finishes the quiz, and should notify the user of missing questions. (The latter will be done in pure html.)</p>
-            <h3>Article loader</h3>
-            <p>This program will <span class="strikethrough">new articles from a predefined set of words</span> load ancient articles. This should also include the option to print the article.</p>
-            <p>This will make use of the randomly selected words to create sentences, which create paragraphs, which create articles. This iterative design can easily be extended to create complete books of Lorem Ipsum.</p>
+            <p>Stine will be implementing the Quiz application. This will be a quiz containing a set of questions about Lorem Ipsum. The aim is to test person of their knowledge of the language.
+            The quiz will consist of a form, which is read by the program and assigns weights to each answer. The result should be displayed on the page as the user finishes the quiz, and should notify the user of missing questions. (The latter will be done in pure html.)</p>
+            <h3>Article generator</h3>
+            <p>Kasper will be creating the javascript application, Article Generator. This program will <span class="strikethrough">new articles from a predefined set of words</span> load randomized articles of lorem ipsum.</p>
+            <p>This will make use of the randomly selected words to create sentences, which create paragraphs, which create articles. </p>
             <h3>Base loader</h3>
-            <p>This program will ensure that the header and footer is the same on all site pages, by loading them from a single source. This enables a modular design.</p>
+            <p>Eiving will be creating the base loader. This program will ensure that the header and footer is the same on all site pages, by loading them from a single source. This enables a modular design.</p>
             <p>This will use fetch API to load and inject the header and footer when the page loads.</p>
         </div>
         <div class="block">
@@ -307,7 +337,6 @@
                 </tr>
             </table>
             <p>Deadlines are subject to change.</p>
-            <p>The translator program is likely to be merged to a single file.</p>
         </div>
     </main>
     <footer class="center">
