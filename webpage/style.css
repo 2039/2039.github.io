@@ -1,0 +1,17 @@
+html, body{
+  background-color: #FF8F00;
+  color: #000000;
+  font-family: Helvetica, Sans-Serif;
+  width: 100vw;
+}
+
+
+
+#wrapper{
+  background-color: #FEBD48;
+  color: #000000;
+  width: 60vw;
+  margin left: 10vw;
+  margin right: 10vw;
+
+}
