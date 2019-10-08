@@ -1,0 +1,88 @@
+<style>
+    .nav {
+        display: flex;
+        flex-direction: column;
+
+        width: 100vw;
+        margin: auto;
+        padding: 1em;
+        box-sizing: border-box;
+
+        background-color: var(--primary-background-color);
+    }
+
+    /* https://codeburst.io/how-to-make-a-collapsible-menu-using-only-css-a1cd805b1390?gi=9edd4c457952 */
+    #nav__state { display: none; }
+
+    .nav__item { list-style: none; font-size: 1.2em; color: white; }
+    .nav__link { text-decoration: none; color: inherit; }
+
+    .nav__item:hover { color: lightgrey; }
+    .nav__link:hover { cursor: default; }
+
+    .nav__list {
+        flex-grow: 1;
+
+        display: flex;
+        align-items: center; /* align on line */
+        align-content: space-around; /* align rows */
+        justify-content: space-evenly;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav__list--mobile { display: none; }
+
+    @media only screen and (max-width: 600px) {
+        .nav__button { display: inline; font-size: 2em; }
+        #nav__state:not(:checked) ~ .nav__list--links { display: none; }
+
+        .nav__list--mobile {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .nav__list--links {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .nav__hide { display: none; }
+    }
+</style>
+<nav class="nav">
+    <!-- Inspired by apple.com's menu design -->
+    <input type="checkbox" id="nav__state" checked>
+    <ul class="nav__list nav__list--mobile">
+        <li class="nav__item"><label for="nav__state" class="nav__button">
+            ≡
+        </label></li>
+        <li class="nav__item"><a class="nav__link" href="home">
+            LOGO
+        </a></li>
+    </ul>
+
+    <ul class="nav__list nav__list--links">
+        <li class="nav__item nav__hide"><a class="nav__link" href="home">
+            LOGO
+        </a></li>
+        <li class="nav__item"><a class="nav__link" href="home">
+            Home
+        </a></li>
+        <li class="nav__item"><a class="nav__link" href="home">
+            Lorem Ipsum
+        </a></li>
+        <li class="nav__item"><a class="nav__link" href="home">
+            Library
+        </a></li>
+        <li class="nav__item"><a class="nav__link" href="home">
+            Translator
+        </a></li>
+        <li class="nav__item"><a class="nav__link" href="home">
+            About
+        </a></li>
+    </ul>
+</nav>
+
