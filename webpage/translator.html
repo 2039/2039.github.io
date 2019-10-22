@@ -4,16 +4,17 @@
   <meta charset="utf-8"/>
   <link rel="stylesheet" href="style.css"/>
   <title> Lorem Ipsum Research - Translator</title>
+  <script src="translator.js" defer></script>
 </head>
   <body>
     <div id=content>
       <h1> Lorem Ipsum Translator</h1>
-      <form>
-        <textarea class="translation_box" name="input_text" rows="10" placeholder="Enter text to be translated..."></textarea>
+      <form onsubmit="return false">
+        <textarea class="translation-box" id="input" rows="10" placeholder="Enter text to be translated..."></textarea>
         <br />
-        <button id="translate_button" name="translate">Translate</button>
+        <button id="translate-button" name="translate">Translate</button>
         <br />
-        <textarea class="translation_box" name="output_text"  rows=10 disabled placeholder="Translated text..."></textarea>
+        <textarea class="translation-box" id="output"  rows=10 disabled placeholder="Translated text..."></textarea>
       </form>
     </div>
   </body>

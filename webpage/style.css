@@ -17,14 +17,18 @@ html, body{
   margin-right: auto;
 }
 
-.translation_box{
+.translation-box{
  width: 60vw;
  margin: auto;
 }
 
-#translate_button{
+#translate-button{
   font-size: 18px;
   width: 8em;
   height: 2em;
   margin: 1em;
+}
+
+#output{
+  color: black;
 }
