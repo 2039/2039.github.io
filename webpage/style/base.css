@@ -12,7 +12,7 @@ html, body {
   width: 100vw;
   max-width: 100%; /* fix for scrollbar */
   margin: 0;
-  
+
   background-color: #FF8F00;
   color: #000000;
   font-family: Helvetica, Sans-Serif;
@@ -28,6 +28,7 @@ html, body {
   margin-right: auto;
 }
 
+
 .translation_box{
  width: 60vw;
  margin: auto;
@@ -38,6 +39,20 @@ html, body {
   width: 8em;
   height: 2em;
   margin: 1em;
+}
+
+/*generator styles*/
+#genbutton{
+  font-size: 18px;
+  width: 8em;
+  height: 2em;
+  margin: 1em;
+}
+
+#genInput{
+  text-align: center;
+  width: 1.5em;
+  height: 1.5em;
 }
 
 
