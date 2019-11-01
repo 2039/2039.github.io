@@ -42,7 +42,7 @@ function submitAnswers(){
 	let oute = document.getElementById("quiz_output");
 	if(allAnswered){
 		let score = checkAnswers();
-		oute.innerHTML = "Score: " + score + "/" + correct.length + " correct";
+		oute.innerHTML = "Score: " + score + "/" + correct.length + " correct (green marks the correct answers)";
 	}
 	oute.style.display = "block";
 }
