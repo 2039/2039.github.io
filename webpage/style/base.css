@@ -70,6 +70,9 @@ html, body {
     max-width: var(--max-width);
     width: var(--text-width);
     margin: auto;
+
+    background-color: var(--content-background-color);
+    padding: 2em;
 }
 
 .article__heading {
