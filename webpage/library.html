@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
-  <link rel="stylesheet" href="style/base.css"/>
+  <link rel="stylesheet" href="style/base.css">
   <title> Lorem Ipsum Research - Article Generator</title>
+
+  <script src="script/base.js" defer=""></script>
 </head>
 <body>
+  <header id="header" class="header"></header>
   <div id="content">
   <h1> Article Generator: </h1>
   Number of paragraphs:
@@ -15,7 +18,9 @@
   <button type="button" id="genbutton"> Generate </button> <br>
 
   <textarea class="translation_box" name="output_text"  rows=10  id ="outbox"></textarea>
-  <div>
+
+</div>
+<footer id="footer" class="footer"></footer>
 </body>
   <script src="script/generator.js"> </script>
 </html>
