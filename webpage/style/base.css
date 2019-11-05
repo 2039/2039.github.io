@@ -7,7 +7,7 @@
     --main-text-color: #000000;
     --var-text-color: #707070;
     
-    --max-width: 90vw;
+    --min-width: 90vw;
     --text-width: 80ch;
 }
 
@@ -29,7 +29,8 @@ body {
 #content {
     background-color: var(--content-background-color);
     color: var(--main-text-color);
-    width: 60vw;
+    width: var(--text-width);
+    min-width: var(--min-width);
     padding: 10vw;
     text-align: center;
     margin-left: auto;
@@ -37,7 +38,8 @@ body {
 }
 
 .translation_box {
-    width: 60vw;
+    width: var(--text-width);
+    min-width: var(--min-width);
     margin: auto;
 }
 
@@ -74,11 +76,11 @@ body {
 .article {
     display: flex;
     flex-direction: column;
-    max-width: var(--max-width);
+    min-width: var(--min-width);
     width: var(--text-width);
     margin: auto;
     background-color: var(--content-background-color);
-    padding: 2em;
+    padding: 10vw;
 }
 
 .article__heading {
