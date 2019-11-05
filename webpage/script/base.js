@@ -21,9 +21,10 @@ const sha256 = async (text) => {
     return hashHex
 }
 
+// Uncomment/update hashes to ensure validity of templates
 
-const hchk = "933841f52a0ec826b3245baa6d5d627b4f6e384bade074b72e1b709a8e030d54";
-const fchk = "d9b1d0b6f1665acb382718414943ee523577119f143b145d3b5e57df6412a862";
+// const hchk = "933841f52a0ec826b3245baa6d5d627b4f6e384bade074b72e1b709a8e030d54";
+// const fchk = "d9b1d0b6f1665acb382718414943ee523577119f143b145d3b5e57df6412a862";
 
 
 const verify = (plain, hash) => plain.then(sha256).then(h => (h === hash) ? plain : "Invalid checksum");
@@ -34,5 +35,16 @@ const footer = document.getElementById("footer");
 
 // verify(headerBase, hchk).then(e => header.innerHTML = e);
 // verify(footerBase, fchk).then(e => footer.innerHTML = e);
-headerBase.then(e => header.innerHTML = e)
+
+const markActive = () => {
+    const locationName = window.location.pathname.split("/").pop().split(".")[0] || "home";
+
+    const locationButton = document.getElementById(`link-${locationName}`);
+
+    locationButton.classList.add("nav__button--active");
+}
+
+headerBase.then(e => header.innerHTML = e).then(markActive)
 footerBase.then(e => footer.innerHTML = e)
+
+
