@@ -92,6 +92,8 @@ body {
     padding: 1em;
     box-sizing: border-box;
     background-color: #FFDD9A;
+    color: #717070;
+    border-color: #717070;
     /*var(--primary-background-color);*/
 }
 
