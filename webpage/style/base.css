@@ -1,9 +1,12 @@
 :root {
-    --primary-background-color: orchid;
-    --secondary-background-color: lightcoral;
+    --primary-background-color: #FFDC9F;
+    --secondary-background-color: #FFDC9F;
     --content-background-color: #FEBD48;
     --body-background-color: #FF8F00;
+
     --main-text-color: #000000;
+    --var-text-color: #707070;
+    
     --max-width: 90vw;
     --text-width: 80ch;
 }
