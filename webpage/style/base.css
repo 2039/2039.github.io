@@ -3,29 +3,27 @@
     --secondary-background-color: lightcoral;
     --content-background-color: #FEBD48;
     --body-background-color: #FF8F00;
-
     --main-text-color: #000000;
-
     --max-width: 90vw;
     --text-width: 80ch;
 }
 
-html, body {
+html,
+body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     min-height: 100vh;
     width: 100vw;
-    max-width: 100%; /* fix for scrollbar */
+    max-width: 100%;
+    /* fix for scrollbar */
     margin: 0;
-
     background-color: var(--body-background-color);
     color: var(--main-text-color);
     font-family: Helvetica, Sans-Serif;
 }
 
-#content{
+#content {
     background-color: var(--content-background-color);
     color: var(--main-text-color);
     width: 60vw;
@@ -35,42 +33,47 @@ html, body {
     margin-right: auto;
 }
 
-
-.translation_box{
+.translation_box {
     width: 60vw;
     margin: auto;
 }
 
-#translate_button{
+#translate_button {
     font-size: 18px;
     width: 8em;
     height: 2em;
     margin: 1em;
 }
+
+#output {
+    color: black;
+}
+
 
 /*generator styles*/
-#genbutton{
+
+#genbutton {
     font-size: 18px;
     width: 8em;
     height: 2em;
     margin: 1em;
 }
 
-#genInput{
+#genInput {
     text-align: center;
     width: 1.5em;
     height: 1.5em;
 }
 
+
 /* page */
+
 .article {
     display: flex;
     flex-direction: column;
-
     max-width: var(--max-width);
     width: var(--text-width);
     margin: auto;
-
     background-color: var(--content-background-color);
     padding: 2em;
 }
@@ -79,58 +82,82 @@ html, body {
     text-align: center;
 }
 
+
 /* header and footer styling */
+
 .nav {
     display: flex;
     flex-direction: column;
-
-    margin: auto;
+    margin: 3em 10vw auto 10 vw;
     padding: 1em;
     box-sizing: border-box;
-
     background-color: var(--primary-background-color);
 }
 
+
 /* https://codeburst.io/how-to-make-a-collapsible-menu-using-only-css-a1cd805b1390?gi=9edd4c457952 */
-#nav__state { display: none; }
 
-.nav__item { list-style: none; font-size: 1.2em; color: white; }
-.nav__link { text-decoration: none; color: inherit; }
+#nav__state {
+    display: none;
+}
 
-.nav__item:hover { color: lightgrey; }
-.nav__link:hover { cursor: default; }
+.nav__item {
+    list-style: none;
+    font-size: 1.2em;
+    color: white;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav__item:hover {
+    color: lightgrey;
+}
+
+.nav__link:hover {
+    cursor: default;
+}
 
 .nav__list {
     flex-grow: 1;
-
     display: flex;
-    align-items: center; /* align on line */
-    align-content: space-around; /* align rows */
+    align-items: center;
+    /* align on line */
+    align-content: space-around;
+    /* align rows */
     justify-content: space-evenly;
-
     margin: 0;
     padding: 0;
 }
 
-.nav__list--mobile { display: none; }
+.nav__list--mobile {
+    display: none;
+}
 
 @media only screen and (max-width: 600px) {
-    .nav__button { display: inline; font-size: 2em; }
-    #nav__state:not(:checked) ~ .nav__list--links { display: none; }
-
+    .nav__button {
+        display: inline;
+        font-size: 2em;
+    }
+    #nav__state:not(:checked)~.nav__list--links {
+        display: none;
+    }
     .nav__list--mobile {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
-
     .nav__list--links {
         flex-direction: column;
         align-items: flex-start;
     }
-
-    .nav__hide { display: none; }
+    .nav__hide {
+        display: none;
+    }
 }
+
 .footer {
     background-color: var(--secondary-background-color);
 }
@@ -139,29 +166,35 @@ html, body {
     margin: auto;
     padding: 1em;
     box-sizing: border-box;
-
     text-align: center;
     color: white;
 }
 
+
 /*info and quiz */
+
 blockquote {
-	font-style: italic;
+    font-style: italic;
 }
+
 #quiz_output {
-	display: none;
-	padding: 1%;
+    display: none;
+    padding: 1%;
 }
-.quiz_question{
-	padding: 2%;
-	margin: 1%;
+
+.quiz_question {
+    padding: 2%;
+    margin: 1%;
 }
+
 .quiz_alternative {
-	padding: 1%;
+    padding: 1%;
 }
+
 #quiz_submit {
-	padding: 2%;
+    padding: 2%;
 }
+
 #quiz_submit button {
-	padding: 1%;
+    padding: 1%;
 }
