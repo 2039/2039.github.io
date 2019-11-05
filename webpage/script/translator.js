@@ -13,8 +13,9 @@ const endsWithPunctuation = (word) => {
     return punctutation.includes(word.slice(-1))
 }
 
+// Translate one single word to pig-latin
 const translateWord = (word) => {
-    // Translate one single word to pig-latin
+
     let punctuationEnd = "";
     let validWord = word;
 
