@@ -1,17 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="../webpage/style/base.css">
-  </head>
 
-  <body>
+<head>
+    <!-- <link rel="stylesheet" href="../webpage/style/base.css"> -->
+    <style rel="stylesheet">
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: orange;
+            font-family: sans-serif;
+        }
+        
+        img {
+            width: 60ch;
+        }
+        
+        h1 {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        header {
+            flex-direction: column;
+            min-height: 15vh;
+        }
+        
+        footer {
+            height: 3em;
+            width: 100%;
+            background-color: dimgray;
+            color: white;
+        }
+        
+        main {
+            flex-grow: 1;
+            width: 800px;
+            margin: auto;
+        }
+        
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .inline-list {
+            list-style: none;
+            display: flex;
+        }
+        
+        .inline-list li {
+            display: inline;
+        }
+        
+        .inline-list>li+li:before {
+            content: ", ";
+            padding: 0;
+        }
+        
+        .profile-image {
+            width: 200px;
+        }
+        
+        p {
+            max-width: 80ch;
+        }
+        
+        table {
+            width: 100%;
+            border: 1px solid gray;
+            border-collapse: collapse;
+        }
+        
+        pre {
+            background-color: white;
+            padding: 1em;
+            border-radius: 1em;
+        }
+        
+        td {
+            border: 1px solid gray;
+        }
+        
+        td:first-child {
+            background-color: white;
+        }
+        
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        
+        .incomplete:before {
+            content: "The following section is W.I.P.";
+        }
+        
+        .incomplete {
+            color: gray;
+        }
+    </style>
+</head>
 
-    <h2> link to webpage:
-      <a href=../webpage/index.html> webpage </a>
-    </h2>
+<body>
+    <main>
+        <div class="block">
+            <h2> link to webpage:
+                <a href=../webpage/index.html> webpage </a>
+            </h2>
 
-      <p>The quiz answer mechanism was changed from text input to radio buttons to make it more user-friendly.</p>
+            <p>The quiz answer mechanism was changed from text input to radio buttons to make it more user-friendly.</p>
+            <h2> Requirements fulfilled: </h2>
+            <ol>
+                <li> Hauk-Morten implemented the translator page (translator.html) with the JavaScript translator.js.</li>
+                <li> Kasper implemented the article generator (library.html) including the script generator.js.</li>
+                <li> Kasper uploaded the image biggus.jpeg.</li>
+                <li> Stine made the quiz page (quiz.html) including the script quiz.js.</li>
+                <li> Eivind implemented the header and footer modules, header.html and footer.html with the script base.js. By inserting the elements in all pages with a common script, the code for the headers and footers only exist one place. </li>
+                <li> All group members have contributed to the file base.css. The elements unique to each page have been styled by the person who made the page, and the style properties common to all pages were implemented by Hauk-Morten except for the header
+                    and footer.
+                </li>
+            </ol>
+            <h2> Changes made: </h2>
+            <ol>
+                <li> Stine changed quiz answer mechanism from text input to radio buttons to make it more user-friendly. </li>
+                <li> Eivind moved the header to the top, which was easier to implement. </li>
+                <li> Eivind added mobile support to make the website more accessible. </li>
+                <li> Eivind put at footer at the bottom. Because it looked nice. </li>
+                <li> The user group has been changed to students of informatics and technology, graphic designers and web developers. The age of the group is in the region 22-50 years, with fairly even distribution among the genders.
+                </li>
+            </ol>
+        </div>
+    </main>
 
-  </body>
+</body>
 
 </html>
