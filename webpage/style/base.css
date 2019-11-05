@@ -29,7 +29,8 @@ body {
 #content {
     background-color: var(--content-background-color);
     color: var(--main-text-color);
-    width: 60vw;
+    width: var(--text-width);
+    max-width: var(--max-width);
     padding: 10vw;
     text-align: center;
     margin-left: auto;
@@ -37,7 +38,8 @@ body {
 }
 
 .translation_box {
-    width: 60vw;
+    width: var(--text-width);
+    max-width: var(--max-width);
     margin: auto;
 }
 
@@ -78,7 +80,7 @@ body {
     width: var(--text-width);
     margin: auto;
     background-color: var(--content-background-color);
-    padding: 2em;
+    padding: 10vw;
 }
 
 .article__heading {
