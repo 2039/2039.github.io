@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <title>P3: Changes</title>
+    <meta charset="utf-8">
     <!-- <link rel="stylesheet" href="../webpage/style/base.css"> -->
     <style rel="stylesheet">
         body {
@@ -14,95 +16,95 @@
             background-color: orange;
             font-family: sans-serif;
         }
-        
+
         img {
             width: 60ch;
         }
-        
+
         h1 {
             padding: 0;
             margin: 0;
         }
-        
+
         .center {
             display: flex;
             justify-content: center;
             align-items: center;
         }
-        
+
         header {
             flex-direction: column;
             min-height: 15vh;
         }
-        
+
         footer {
             height: 3em;
             width: 100%;
             background-color: dimgray;
             color: white;
         }
-        
+
         main {
             flex-grow: 1;
             width: 800px;
             margin: auto;
         }
-        
+
         ul {
             margin: 0;
             padding: 0;
         }
-        
+
         .inline-list {
             list-style: none;
             display: flex;
         }
-        
+
         .inline-list li {
             display: inline;
         }
-        
+
         .inline-list>li+li:before {
             content: ", ";
             padding: 0;
         }
-        
+
         .profile-image {
             width: 200px;
         }
-        
+
         p {
             max-width: 80ch;
         }
-        
+
         table {
             width: 100%;
             border: 1px solid gray;
             border-collapse: collapse;
         }
-        
+
         pre {
             background-color: white;
             padding: 1em;
             border-radius: 1em;
         }
-        
+
         td {
             border: 1px solid gray;
         }
-        
+
         td:first-child {
             background-color: white;
         }
-        
+
         .strikethrough {
             text-decoration: line-through;
         }
-        
+
         .incomplete:before {
             content: "The following section is W.I.P.";
         }
-        
+
         .incomplete {
             color: gray;
         }
@@ -113,7 +115,7 @@
     <main>
         <div class="block">
             <h2> link to webpage:
-                <a href=../webpage/index.html> webpage </a>
+                <a href="https://2039.github.io/webpage/"> webpage </a>
             </h2>
 
             <p>The quiz answer mechanism was changed from text input to radio buttons to make it more user-friendly.</p>
@@ -133,6 +135,7 @@
                 <li> Stine changed quiz answer mechanism from text input to radio buttons to make it more user-friendly. </li>
                 <li> Eivind moved the header to the top, which was easier to implement. </li>
                 <li> Eivind put at footer at the bottom. Because it looked nice. </li>
+                <li> Eivind made the header mobile-friendly.</li>
                 <li> The user group has been changed to students of informatics and technology, graphic designers and web developers. The age of the group is in the region 22-50 years, with fairly even distribution among the genders.
                 </li>
                 <li> The header width was changed to fill the page since it was moved to the top, in order to look better.</li>
@@ -140,6 +143,13 @@
                 <li> Based on user feedback, Hauk-Morten added a hyperlink to the header image that redirects to the home page. </li>
             </ol>
         </div>
+        <p>
+            Final work distribution:
+        </p>
+        <table><tr><th>Filename</th><th>Description</th><th>Assignee</th><th>Deadline</th></tr><tr><td><code class="inline highlight">index.html</code></td><td>The front page</td><td>Hauk-Morten</td><td>Nov-01</td></tr><tr><td><code class="inline highlight">quiz.html</code></td><td>The quiz page</td><td>Stine</td><td>Nov-01</td></tr><tr><td><code class="inline highlight">translator.html</code></td><td>The Pig Latin translator</td><td>Andreas</td><td>Nov-01</td></tr><tr><td><code class="inline highlight">library.html</code></td><td>The Lorem Library</td><td>Kasper</td><td>Nov-01</td></tr><tr><td><code class="inline highlight">about.html</code></td><td>Site info</td><td>Eivind</td><td>Nov-01</td></tr><tr><td><code class="inline highlight">info.html</code></td><td>Lorem info</td><td>Stine</td><td>Nov-01</td></tr><tr><td><code class="inline highlight">header.html</code></td><td>Header module</td><td>Eivind</td><td>Nov-01</td></tr><tr><td><code class="inline highlight">monty_python_dude.png</code></td><td>Footer module</td><td>Eivind</td><td>Nov-01</td></tr><tr><td><code class="inline highlight">icon.ico</code></td><td>Site icon</td><td><strong>Kasper</strong></td><td>Nov-01</td></tr><tr><td><code class="inline highlight">image.html</code></td><td>Header image</td><td>Kasper</td><td>Nov-01</td></tr><tr><td><code class="inline highlight">translator_en-pig-Latin.js</code></td><td>Translator program part 1</td><td>Hauk-Morten</td><td>Nov-01</td></tr><tr><td><code class="inline highlight">translator_pig-Latin-en.js</code></td><td>Translator program part 2</td><td><strong>Nobody</strong></td><td>Nov-01</td></tr><tr><td><code class="inline highlight">quiz.js</code></td><td>Quiz program</td><td>Stine</td><td>Nov-01</td></tr><tr><td><code class="inline highlight">article_generator.js</code></td><td>Program to generate Lorem articles</td><td>Kasper</td><td>Nov-01</td></tr><tr><td><code class="inline highlight">base_loader.js</code></td><td>Program to load header and footer dynamically</td><td>Eivind</td><td>Nov-01</td></tr><tr><td><code class="inline highlight">base.css</code></td><td>Base css</td><td><strong>Everyone</strong></td><td>Nov-01</td></tr></table>
+        <p>
+            <strong>strong text</strong> denotes changes.
+        </p>
     </main>
 
 </body>
