@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <style rel="stylesheet">
         body {
             display: flex;
@@ -12,103 +13,103 @@
             background-color: orange;
             font-family: sans-serif;
         }
-
-        img{
-          width: 60ch;
+        
+        img {
+            width: 60ch;
         }
-
+        
         h1 {
             padding: 0;
             margin: 0;
         }
-
+        
         .center {
             display: flex;
             justify-content: center;
             align-items: center;
         }
-
+        
         header {
             flex-direction: column;
             min-height: 15vh;
         }
-
+        
         footer {
             height: 3em;
             width: 100%;
             background-color: dimgray;
             color: white;
         }
-
+        
         main {
             flex-grow: 1;
             width: 800px;
             margin: auto;
         }
-
+        
         ul {
             margin: 0;
             padding: 0;
         }
-
+        
         .inline-list {
             list-style: none;
             display: flex;
         }
-
+        
         .inline-list li {
             display: inline;
         }
-
-        .inline-list > li + li:before {
+        
+        .inline-list>li+li:before {
             content: ", ";
             padding: 0;
         }
-
+        
         .profile-image {
             width: 200px;
         }
-
+        
         p {
             max-width: 80ch;
         }
-
+        
         table {
             width: 100%;
             border: 1px solid gray;
             border-collapse: collapse;
         }
-
+        
         pre {
             background-color: white;
             padding: 1em;
             border-radius: 1em;
         }
-
+        
         td {
             border: 1px solid gray;
         }
-
+        
         td:first-child {
             background-color: white;
         }
-
+        
         .strikethrough {
             text-decoration: line-through;
         }
-
+        
         .incomplete:before {
             content: "The following section is W.I.P.";
         }
-
+        
         .incomplete {
             color: gray;
         }
     </style>
     <title>P4: Testing</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <header class="center">
 
         <h1>1: Lorem Ipsum</h1>
@@ -122,83 +123,80 @@
         <time datetime="2019-09-20">October 2019</time>
     </header>
     <main>
-    <div class="block">
-        <h2>2: Administrative details</h2>
-        <ul>
-            <li>Client name: Laura Orem</li>
-            <li>Contact person: Ina P. Sum</li>
-        </ul>
-        <p>Our (imaginary) client is a researcher in Lorem Ipsum at the Dolor Sit Amet Institute in Trondheim.
-          Laura has spent considerable time investigating and learning about this language, but has come to a halt.
-          She has requested that we make a website that demonstrates the peculiar aspects of this language,
-           with the hope that this may raise awareness and aid her research.</p>
-        <figure class="center"><img class="profile-image" alt="client image" src="https://ih0.redbubble.net/image.236642062.7494/flat,750x,075,f-pad,750x1000,f8f8f8.jpg"></figure>
-    </div>
-
-    <div class=block>
-      <h2>3: Testing document </h2>
-      <p> Our <a href="https://docs.google.com/forms/d/e/1FAIpQLSdEKe65qkV4qP6WY3K2peW5bON6TlXMYElyCs_Pj52to1GHNQ/viewform">testing questionaire</a> consisted of the following questions: </p>
-        <ol>
-          <li> What is your profession? </li>
+        <div class="block">
+            <h2>2: Administrative details</h2>
             <ul>
-              <li> Student </li>
-              <li> Graphic designer </li>
-              <li> Web page developer </li>
-              <li> other </li>
+                <li>Client name: Laura Orem</li>
+                <li>Contact person: Ina P. Sum</li>
             </ul>
-          <li> Was the website easy to navigate? yes/no</li>
-          <li> Did you understand the tools the website provided? yes/no</li>
-          <li> Did you find the information on the website to be helpful? yes/no</li>
-        </ol>
-      <p>The user is also asked to elaborate if a negative answer is given. i.e if the website was difficult to navigate,
-      what spesifically made it difficult? </p>
-    </div>
+            <p>Our (imaginary) client is a researcher in Lorem Ipsum at the Dolor Sit Amet Institute in Trondheim. Laura has spent considerable time investigating and learning about this language, but has come to a halt. She has requested that we make a
+                website that demonstrates the peculiar aspects of this language, with the hope that this may raise awareness and aid her research.</p>
+            <figure class="center"><img class="profile-image" alt="client image" src="https://ih0.redbubble.net/image.236642062.7494/flat,750x,075,f-pad,750x1000,f8f8f8.jpg"></figure>
+        </div>
 
-    <div class=block>
-      <h2>4: Tester audience </h2>
-      <p> A total of four persons tested the webpage. The testers' professions were as following:</p>
-      <ul>
-        <li> Student: 75% </li>
-        <li> Graphic designer: 0% </li>
-        <li> Web page developer: 25% </li>
-      </ul>
-      <p> The successfullness of our webpage is listed in percentage below, based on the three questions from our questionaire"</p>
-      <ul>
-        <li> Was the website easy to navigate? 100%</li>
-        <li> Did you understand the tools the website provided? 100%</li>
-        <li> Did you find the information on the website to be helpful? 75% </li>
-      </ul>
-    </div>
+        <div class=block>
+            <h2>3: Testing document </h2>
+            <p> Our <a href="https://docs.google.com/forms/d/e/1FAIpQLSdEKe65qkV4qP6WY3K2peW5bON6TlXMYElyCs_Pj52to1GHNQ/viewform">testing questionaire</a> consisted of the following questions: </p>
+            <ol>
+                <li> What is your profession? </li>
+                <ul>
+                    <li> Student </li>
+                    <li> Graphic designer </li>
+                    <li> Web page developer </li>
+                    <li> other </li>
+                </ul>
+                <li> Was the website easy to navigate? yes/no</li>
+                <li> Did you understand the tools the website provided? yes/no</li>
+                <li> Did you find the information on the website to be helpful? yes/no</li>
+            </ol>
+            <p>The user is also asked to elaborate if a negative answer is given. i.e if the website was difficult to navigate, what spesifically made it difficult? </p>
+        </div>
 
-    <div class=block>
-      <h2>5: Testing platforms </h2>
-      <p> Our users only tested the website on a desktop. </p>
-    </div>
+        <div class=block>
+            <h2>4: Tester audience </h2>
+            <p> A total of four persons tested the webpage. The testers' professions were as following:</p>
+            <ul>
+                <li> Student: 75% </li>
+                <li> Graphic designer: 0% </li>
+                <li> Web page developer: 25% </li>
+            </ul>
+            <p> The successfullness of our webpage is listed in percentage below, based on the three questions from our questionaire"</p>
+            <ul>
+                <li> Was the website easy to navigate? 100%</li>
+                <li> Did you understand the tools the website provided? 100%</li>
+                <li> Did you find the information on the website to be helpful? 75% </li>
+            </ul>
+        </div>
 
-    <div class=block>
-      <h2>6: Feedback summary</h2>
-      <p> The first feedback we got was that the picture in the header did not direct the user to the home page. </p>
-      <p> Two users noted that the translator didn't translate both ways. </p>
-      <p> From live testing we got the response that the webpage allowed for some sideways scrolling which was annoying to the user.
-        i.e. the entire width of the webpage is not contained within the browser window. </p>
-    </div>
+        <div class=block>
+            <h2>5: Testing platforms </h2>
+            <p> Our users only tested the website on a desktop. </p>
+        </div>
 
-    <div class=block>
-      <h2>7: Our response </h2>
-      <p> That the picture in the header was supposed to direct the user back to the home page, was a feature we overlooked
-        in the design of the webpage. This is however a normal feature to have on a webpage, so we are implementing it to
-        the webpage as a response to the feedback. </p>
-      <p> The translator was intended from the beginning to only translate one way, and that two-way translation could be
-      implemented if we had enough extra time. </p>
-    </div>
+        <div class=block>
+            <h2>6: Feedback summary</h2>
+            <p> The first feedback we got was that the picture in the header did not direct the user to the home page. </p>
+            <p> Two users noted that the translator didn't translate both ways. </p>
+            <p> From live testing we got the response that the webpage allowed for some sideways scrolling which was annoying to the user. i.e. the entire width of the webpage is not contained within the browser window. </p>
+        </div>
 
-    <div class=block>
-      <h2>8: Self reflection </h2>
-        <p> Kasper: I have learnt that it is incredibly annoying to be on a group where some members at multiple occations
-          don't show up to the meetings, and don't even bother to appologize and explain why they didn't show up. Still,
-          against all odds, we have created a working webpage, and I'm now looking forward to being finished with the exam. </p>
-    </div>
+        <div class=block>
+            <h2>7: Our response </h2>
+            <p> That the picture in the header was supposed to direct the user back to the home page, was a feature we overlooked in the design of the webpage. This is however a normal feature to have on a webpage, so we are implementing it to the webpage
+                as a response to the feedback. </p>
+            <p> The translator was intended from the beginning to only translate one way, the two-way translation could be implemented if we had enough extra time. In order to avoid the expectation of two-way translation, a text could be added that lets the
+                user know that the translator only works one way.</p>
+        </div>
+
+        <div class=block>
+            <h2>8: Self reflection </h2>
+            <p> Kasper: I have learnt that it is incredibly annoying to be on a group where some members at multiple occations don't show up to the meetings, and don't even bother to appologize and explain why they didn't show up. Still, against all odds,
+                we have created a working webpage, and I'm now looking forward to being finished with the exam. </p>
+            <p> Hauk-Morten: I have learnt that even group tasks where only half the group shows up the first hour of meetings might complete their tasks. Even though the result might have been more impressive, I believe it fullfils the requirements. I have
+                learnt much more about working with javascript, css and html, and I have gotten much more confident in using git and github.
+            </p>
+        </div>
     </main>
-  </body>
+</body>
 
 </html>
