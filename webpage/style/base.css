@@ -125,6 +125,7 @@ body {
     font-size: 1.2em;
     background-color: #FFF;
     border: 1px solid grey;
+    box-sizing: border-box;
 }
 
 .nav__button--active {
@@ -166,10 +167,10 @@ body {
         display: inline;
         font-size: 3em;
     }
-    #nav__state:not(:checked)~.nav__wrapper {
+    #nav__state:not(:checked) ~ .nav__wrapper {
         display: none;
     }
-    .nav__wrapper>.nav__heading {
+    .nav__wrapper > .nav__heading {
         display: none;
     }
     .nav__list--mobile {
@@ -180,11 +181,16 @@ body {
     .nav__list--links {
         flex-direction: column;
         align-items: flex-start;
+        width: 80vw;
+        margin: auto;
+    }
+    .nav__list--links > .nav__item {
+        width: 100%;
     }
     .nav__button {
         display: inline-block;
         line-height: 2em;
-        width: 84vw;
+        width: 100%;
         margin: auto;
     }
     .nav__hide {
