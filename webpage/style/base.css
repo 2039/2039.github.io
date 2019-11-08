@@ -29,6 +29,7 @@ body {
     color: var(--main-text-color);
     width: var(--text-width);
     max-width: var(--max-width);
+    box-sizing: border-box;
     padding: 10vw;
     margin: auto;
     text-align: center;
