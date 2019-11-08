@@ -33,7 +33,7 @@ body {
     margin: auto;
     text-align: center;
 }
-@media only screen and (max-device-width: 800px) {
+@media only screen and (max-width: 800px) {
     #content { padding: 1em; }   
 }
 
@@ -160,7 +160,7 @@ body {
     display: none;
 }
 
-@media only screen and (max-device-width: 800px) {
+@media only screen and (max-width: 800px) {
     .nav__toggle {
         display: inline;
         font-size: 3em;
